@@ -3,4 +3,10 @@
 3) Copied and pasted each card's code from switch statement into
    their defined functions.
 4) Determined and re-typed what each funtion is returning.
-5) Determined and then declared funtions parameters.
+5) Call each of the five cards' functions in the switch statement
+   in the cardEffect function.
+6) Determined and then declared funtions parameters, along with
+   determining and declaring each individual funtion's extra
+   variables needed.
+7) Determined which arguments each function will need to preform
+   within their own functions to pass.

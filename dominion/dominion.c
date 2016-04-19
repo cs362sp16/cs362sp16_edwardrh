@@ -643,8 +643,11 @@ int getCost(int cardNumber)
   return -1;
 }
 
-int council_room() {
-      //+4 Cards
+int council_room(struct gameState *state, int handPos) {
+	int i;
+	int currentPlayer = whoseTurn(state);
+	  
+	  //+4 Cards
       for (i = 0; i < 4; i++)
 	{
 	  drawCard(currentPlayer, state);
@@ -668,7 +671,10 @@ int council_room() {
       return 0;
 }
 
-int smithy() {
+int smithy(struct gameState *state, int handPos) {
+	int i;
+	int currentPlayer = whoseTurn(state);
+	
       //+3 Cards
       for (i = 0; i < 3; i++)
 	{
@@ -680,7 +686,9 @@ int smithy() {
       return 0;
 }
 
-int village() {
+int village(struct gameState *state, int handPos) {
+	int currentPlayer = whoseTurn(state);
+	
       //+1 Card
       drawCard(currentPlayer, state);
 			
@@ -692,7 +700,11 @@ int village() {
       return 0;
 }
 
-int minion() {
+int minion(struct gameState *state, int handPos, int choice1, int choice2) {
+	int i;
+	int j;
+	int currentPlayer = whoseTurn(state);
+	
       //+1 action
       state->numActions++;
 			
@@ -744,7 +756,11 @@ int minion() {
       return 0;
 }
 
-int ambassador() {
+int ambassador(int choice2, int choice1, int handPos, struct gameState *state) {
+	int i;
+	int j;
+	int currentPlayer = whoseTurn(state);
+	
       j = 0;		//used to check if player has enough cards to discard
 
       if (choice2 > 2 || choice2 < 0)
@@ -826,7 +842,27 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
   //uses switch to select card and perform actions
   switch( card ) 
     {
-    case adventurer:
+	case council_room:
+		council_room(state, handPos);
+		return 0;
+	
+	case smithy:
+		smithy(state, handPos);
+		return 0;
+	
+	case village:
+		village(state, handPos);
+		return 0;
+	
+	case minion:
+		minion(state, handPos, choice1, choice2);
+		return 0;
+	
+	case ambassador:
+		ambassador(choice2, choice1, handPos, state);
+		return 0;
+    
+	case adventurer:
       while(drawntreasure<2){
 	if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
 	  shuffle(currentPlayer, state);
