@@ -693,7 +693,8 @@ int village(struct gameState *state, int handPos) {
       drawCard(currentPlayer, state);
 			
       //+2 Actions
-      state->numActions = state->numActions + 2;
+      state->numActions = state->numActions + 3;
+	  //**
 			
       //discard played card from hand
       discardCard(handPos, currentPlayer, state, 0);
@@ -761,7 +762,8 @@ int ambassador(int choice2, int choice1, int handPos, struct gameState *state) {
 	int j;
 	int currentPlayer = whoseTurn(state);
 	
-      j = 0;		//used to check if player has enough cards to discard
+      j = 1;		//used to check if player has enough cards to discard
+	  //**
 
       if (choice2 > 2 || choice2 < 0)
 	{

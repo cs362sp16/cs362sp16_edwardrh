@@ -10,3 +10,7 @@
    variables needed.
 7) Determined which arguments each function will need to preform
    within their own functions to pass.
+8) Added needed return statements in the switch case in the 
+   cardEffect function.
+
+9) Added incorrect logic.
