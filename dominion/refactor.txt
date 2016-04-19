@@ -1,0 +1,6 @@
+1) Created basic structure for five empty functions.
+2) Named functions depending on five chosen cards to refactor.
+3) Copied and pasted each card's code from switch statement into
+   their defined functions.
+4) Determined and re-typed what each funtion is returning.
+5) Determined and then declared funtions parameters.
