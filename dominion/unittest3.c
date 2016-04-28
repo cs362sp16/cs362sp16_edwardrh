@@ -10,6 +10,10 @@ void assert(){
 //compare(const void* a, const void* b)
 
 void testCompare(){
-	gameState* game = newGame();
+	compare(0, 1);
+	assert();
+	compare(1, 0);
+	assert();
+	compare(0, 0);
 	assert();
 }

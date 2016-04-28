@@ -11,5 +11,6 @@ void assert(){
 
 void testGameInitialization(){
 	gameState* game = newGame();
+	initializeGame(0, 10, 0, game);
 	assert();
 }
