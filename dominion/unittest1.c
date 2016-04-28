@@ -1,4 +1,4 @@
-#include "dominion.c"
+#include "dominion.h"
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
@@ -7,7 +7,7 @@ void assertNotNull(){
 	
 }
 
-void testGameCreation(){
+int main{
 	gameState* game = newGame();
 	assertNotNull(game);
 }

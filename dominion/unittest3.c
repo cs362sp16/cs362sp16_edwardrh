@@ -1,15 +1,15 @@
-#include "dominion.c"
+#include "dominion.h"
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
 
-void assert(){
+void myassert(){
 	
 }
 
 //compare(const void* a, const void* b)
 
-void testCompare(){
+int main(){
 	compare(0, 1);
 	assert();
 	compare(1, 0);
