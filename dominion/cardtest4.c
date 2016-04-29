@@ -14,8 +14,8 @@ void myassert(){
 
 int main(){
 	/*gameState* game = newGame();
-	
-	myassert(); //Checked
+	//case great_hall in cardEffect
+	myassert(); //Checked +1 Card and +1 Action
 	if (!failed){
 		printf("TEST PASSED.\n");
 	}*/

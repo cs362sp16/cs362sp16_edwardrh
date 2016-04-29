@@ -14,8 +14,8 @@ void myassert(){
 
 int main(){
 	/*gameState* game = newGame();
-	village();
-	myassert(); //Checked
+	minion(game, 1);
+	myassert(); //Checked +1 Action and +2 Coins
 	if (!failed){
 		printf("TEST PASSED.\n");
 	}*/
