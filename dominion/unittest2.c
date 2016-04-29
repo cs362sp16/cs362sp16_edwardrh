@@ -3,8 +3,13 @@
 #include <math.h>
 #include <stdlib.h>
 
-void myassert(){
-	
+int failed = 0;
+
+void myassert(int num){
+	if (!num){
+		printf("TEST FAILED.\n");
+		failed = 1;
+	}
 }
 
 //initializeGame(int numPlayers, int kingdomCards[10], int randomSeed, struct gameState *state)
@@ -12,5 +17,9 @@ void myassert(){
 int main(){
 	gameState* game = newGame();
 	initializeGame(0, 10, 0, game);
-	assert();
+	myassert(game.numPlayers == 0);
+	if (!failed){
+		printf("TEST PASSED.\n");
+	}
+	return 0;
 }

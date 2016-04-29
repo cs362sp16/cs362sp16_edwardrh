@@ -3,17 +3,23 @@
 #include <math.h>
 #include <stdlib.h>
 
-void myassert(){
-	
+int failed = 0;
+
+void myassert(int num){
+	if (!num){
+		printf("TEST FAILED.\n");
+		failed = 1;
+	}
 }
 
 //compare(const void* a, const void* b)
 
 int main(){
-	compare(0, 1);
-	assert();
-	compare(1, 0);
-	assert();
-	compare(0, 0);
-	assert();
+	myassert(compare(0, 1) == (-1));
+	myassert(compare(1, 0) == 1);
+	myassert(compare() == 0);
+	if (!failed){
+		printf("TEST PASSED.\n");
+	}
+	return 0;
 }

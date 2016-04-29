@@ -3,11 +3,20 @@
 #include <math.h>
 #include <stdlib.h>
 
-void assertNotNull(){
-	
+int failed = 0;
+
+void assertNotNull(gameState* g){
+	if (!g){
+		printf("TEST FAILED.\n");
+		failed = 1;
+	}
 }
 
-int main{
+int main(){
 	gameState* game = newGame();
 	assertNotNull(game);
+	if (!failed){
+		printf("TEST PASSED.\n");
+	}
+	return 0;
 }
