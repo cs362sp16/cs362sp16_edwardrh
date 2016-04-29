@@ -12,10 +12,11 @@ void myassert(){
 	}
 }*/
 
-//compare(const void* a, const void* b)
-
 int main(){
-	/*if (!failed){
+	/*gameState* game = newGame();
+	council_room(game, 1)
+	myassert(); //Checked +4 Cards and +1 Buy
+	if (!failed){
 		printf("TEST PASSED.\n");
 	}*/
 	return 0;

@@ -12,10 +12,11 @@ void myassert(){
 	}
 }*/
 
-//compare(const void* a, const void* b)
-
 int main(){
-	/*if (!failed){
+	/*gameState* game = newGame();
+	village();
+	myassert(); //Checked
+	if (!failed){
 		printf("TEST PASSED.\n");
 	}*/
 	return 0;
