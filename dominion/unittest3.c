@@ -15,9 +15,12 @@ void myassert(int num){
 //compare(const void* a, const void* b)
 
 int main(){
-	myassert(compare(0, 1) == (-1));
-	myassert(compare(1, 0) == 1);
-	myassert(compare() == 0);
+	int result = compare(0, 1);
+	myassert(result == (-1));
+	result = compare(1, 0);
+	myassert(result == 1);
+	result = compare();
+	myassert(result == 0);
 	if (!failed){
 		printf("TEST PASSED.\n");
 	}

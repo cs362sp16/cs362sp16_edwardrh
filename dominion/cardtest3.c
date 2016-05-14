@@ -13,7 +13,7 @@ void myassert(){
 }*/
 
 int main(){
-	/*gameState* game = newGame();
+	/*struct gameState* game = newGame();
 	minion(game, 1);
 	myassert(); //Checked +1 Action and +2 Coins
 	if (!failed){

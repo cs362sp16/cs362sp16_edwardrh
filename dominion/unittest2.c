@@ -15,9 +15,10 @@ void myassert(int num){
 //initializeGame(int numPlayers, int kingdomCards[10], int randomSeed, struct gameState *state)
 
 int main(){
-	gameState* game = newGame();
-	initializeGame(0, 10, 0, game);
-	myassert(game.numPlayers == 0);
+	struct gameState* game = newGame();
+	int* k = malloc(10 * sizeof(int));
+	game = initializeGame(0, k, 0, game);
+	myassert(game->numPlayers == 0);
 	if (!failed){
 		printf("TEST PASSED.\n");
 	}

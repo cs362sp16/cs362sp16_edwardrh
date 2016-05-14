@@ -13,7 +13,7 @@ void myassert(){
 }*/
 
 int main(){
-	/*gameState* game = newGame();
+	/*struct gameState* game = newGame();
 	smithy(game, 1);
 	myassert(); //Checked +3 Cards
 	if (!failed){

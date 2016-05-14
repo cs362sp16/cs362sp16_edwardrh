@@ -13,7 +13,7 @@ void myassert(){
 }*/
 
 int main(){
-	/*gameState* game = newGame();
+	/*struct gameState* game = newGame();
 	//case great_hall in cardEffect
 	myassert(); //Checked +1 Card and +1 Action
 	if (!failed){

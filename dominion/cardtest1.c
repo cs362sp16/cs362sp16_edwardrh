@@ -13,7 +13,7 @@ void myassert(){
 }*/
 
 int main(){
-	/*gameState* game = newGame();
+	/*struct gameState* game = newGame();
 	council_room(game, 1)
 	myassert(); //Checked +4 Cards and +1 Buy
 	if (!failed){

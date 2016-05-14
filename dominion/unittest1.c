@@ -5,7 +5,7 @@
 
 int failed = 0;
 
-void assertNotNull(gameState* g){
+void assertNotNull(struct gameState* g){
 	if (!g){
 		printf("TEST FAILED.\n");
 		failed = 1;
@@ -13,7 +13,7 @@ void assertNotNull(gameState* g){
 }
 
 int main(){
-	gameState* game = newGame();
+	struct gameState* game = newGame();
 	assertNotNull(game);
 	if (!failed){
 		printf("TEST PASSED.\n");
