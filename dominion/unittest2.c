@@ -17,7 +17,7 @@ void myassert(int num){
 int main(){
 	struct gameState* game = newGame();
 	int* k = malloc(10 * sizeof(int));
-	game = initializeGame(0, k, 0, game);
+	initializeGame(0, k, 0, game);
 	myassert(game->numPlayers == 0);
 	if (!failed){
 		printf("TEST PASSED.\n");
