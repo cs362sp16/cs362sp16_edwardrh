@@ -1,0 +1,10 @@
+- Pick classmate working Dominion implementations
+- Compare with diffdominion.c for several seeds
+- Proceed until find difference (Write About This)
+
+- How easy is it to decide who is correct?
+- Discuss why not ideal case for differential testing
+
+- Measure code coverage on both implementations (Discuss Results)
+- Your randomm tester, if run more than 20 times,
+  obtain at least 60% coverage of dominion.c
