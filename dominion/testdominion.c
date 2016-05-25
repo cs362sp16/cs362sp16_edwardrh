@@ -166,7 +166,6 @@ int main (int argc, char** argv) {
 	  }
 	  i++;
 	}
-      }
       if (money >= 8) {
         printf("1: bought province\n");
         buyCard(province, p);
@@ -208,7 +207,6 @@ int main (int argc, char** argv) {
 	  }
 	  i++;
 	}
-      }
       if (money >= 8) {
         printf("1: bought province\n");
         buyCard(province, p);
@@ -250,7 +248,6 @@ int main (int argc, char** argv) {
 	  }
 	  i++;
 	}
-      }
       if (money >= 8) {
         printf("1: bought province\n");
         buyCard(province, p);
@@ -292,7 +289,6 @@ int main (int argc, char** argv) {
 	  }
 	  i++;
 	}
-      }
       if (money >= 8) {
         printf("1: bought province\n");
         buyCard(province, p);
@@ -334,7 +330,6 @@ int main (int argc, char** argv) {
 	  }
 	  i++;
 	}
-      }
       if (money >= 8) {
         printf("1: bought province\n");
         buyCard(province, p);
@@ -376,7 +371,6 @@ int main (int argc, char** argv) {
 	  }
 	  i++;
 	}
-      }
       if (money >= 8) {
         printf("1: bought province\n");
         buyCard(province, p);
@@ -419,7 +413,6 @@ int main (int argc, char** argv) {
 	  }
 	  i++;
 	}
-      }
       if (money >= 8) {
         printf("0: bought province\n"); 
         buyCard(province, p);
@@ -437,6 +430,7 @@ int main (int argc, char** argv) {
         printf("0: bought silver\n"); 
         buyCard(silver, p);
       }
+	}
 	//village
 	if (villagePos != -1) {
         printf("1: village played from position %d\n", villagePos);
@@ -458,7 +452,6 @@ int main (int argc, char** argv) {
 	  }
 	  i++;
 	}
-      }
       if (money >= 8) {
         printf("1: bought province\n");
         buyCard(province, p);
@@ -500,7 +493,6 @@ int main (int argc, char** argv) {
 	  }
 	  i++;
 	}
-      }
       if (money >= 8) {
         printf("1: bought province\n");
         buyCard(province, p);
@@ -542,7 +534,6 @@ int main (int argc, char** argv) {
 	  }
 	  i++;
 	}
-      }
       if (money >= 8) {
         printf("1: bought province\n");
         buyCard(province, p);
@@ -584,7 +575,6 @@ int main (int argc, char** argv) {
 	  }
 	  i++;
 	}
-      }
       if (money >= 8) {
         printf("1: bought province\n");
         buyCard(province, p);
@@ -626,7 +616,6 @@ int main (int argc, char** argv) {
 	  }
 	  i++;
 	}
-      }
       if (money >= 8) {
         printf("1: bought province\n");
         buyCard(province, p);
@@ -668,7 +657,6 @@ int main (int argc, char** argv) {
 	  }
 	  i++;
 	}
-      }
       if (money >= 8) {
         printf("1: bought province\n");
         buyCard(province, p);
@@ -710,7 +698,6 @@ int main (int argc, char** argv) {
 	  }
 	  i++;
 	}
-      }
       if (money >= 8) {
         printf("1: bought province\n");
         buyCard(province, p);
@@ -752,7 +739,6 @@ int main (int argc, char** argv) {
 	  }
 	  i++;
 	}
-      }
       if (money >= 8) {
         printf("1: bought province\n");
         buyCard(province, p);
@@ -794,7 +780,6 @@ int main (int argc, char** argv) {
 	  }
 	  i++;
 	}
-      }
       if (money >= 8) {
         printf("1: bought province\n");
         buyCard(province, p);
@@ -836,7 +821,6 @@ int main (int argc, char** argv) {
 	  }
 	  i++;
 	}
-      }
       if (money >= 8) {
         printf("1: bought province\n");
         buyCard(province, p);
@@ -878,7 +862,6 @@ int main (int argc, char** argv) {
 	  }
 	  i++;
 	}
-      }
       if (money >= 8) {
         printf("1: bought province\n");
         buyCard(province, p);
@@ -920,7 +903,6 @@ int main (int argc, char** argv) {
 	  }
 	  i++;
 	}
-      }
       if (money >= 8) {
         printf("1: bought province\n");
         buyCard(province, p);
@@ -962,7 +944,6 @@ int main (int argc, char** argv) {
 	  }
 	  i++;
 	}
-      }
       if (money >= 8) {
         printf("1: bought province\n");
         buyCard(province, p);
@@ -984,15 +965,16 @@ int main (int argc, char** argv) {
       endTurn(p);
     }
 	
-	for(i = 1; i < nump + 1; i++){
+	for(i = 1; i < (nump + 1); i++){
 		printf("Player %d: %d\n", i, scoreFor(i, p));
+	}
 	}
   } //end of While
 
-  printf ("Finished game.\n");
-  for(i = 1; i < nump + 1; i++){
+	printf ("Finished game.\n");
+	for(i = 1; i < (nump + 1); i++){
 		  printf("Player %d: %d\n", i, scoreFor(i, p));
-	  }
+	}
 
   return 0;
 }
