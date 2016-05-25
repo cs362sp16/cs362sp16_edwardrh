@@ -8,3 +8,12 @@
 - Measure code coverage on both implementations (Discuss Results)
 - Your randomm tester, if run more than 20 times,
   obtain at least 60% coverage of dominion.c
+
+Better than playdom, because playdom on chooses two cards 
+(smithy and adventure), so you only have a kill rate with
+the code you cover. With differential testing, you cover
+more code.
+
+playdom also doesn't really check initilization.
+Not only about what you DO in a test, 
+but overall with your orecale

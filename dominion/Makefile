@@ -100,8 +100,19 @@ randomtestadventurer.out: randomtestadventurer playdom
 	./playdom 3 >> randomtestadventurer.out
 	echo "GCOV AFTER PLAYING A GAME" >> randomtestadventurer.out
 	gcov dominion.c >> randomtestadventurer.out
+	
+testdominion: testdominion.c dominion.o
+	gcc -o testdominion testdominion.c -g dominion.o rngs.o $(CFLAGS)
+	
+testdominion.out: testdominion playdom
+	./testdominion >> testdominion.out
+	echo "GCOV AFTER RANDOM TESTER" >> testdominion.out
+	gcov dominion.c >> testdominion.out
+	./playdom 3 >> testdominion.out
+	echo "GCOV AFTER PLAYING A GAME" >> testdominion.out
+	gcov dominion.c >> testdominion.out
 
 all: playdom player
 
 clean:
-	rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 randomtestcard1 randomtestcard2 randomtestadventurer player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
+	rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 randomtestcard1 randomtestcard2 randomtestadventurer testdominion player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM
