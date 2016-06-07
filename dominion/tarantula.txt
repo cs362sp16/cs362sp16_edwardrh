@@ -1,0 +1,25 @@
+- Implement Tarantula using gcov
+- Describe the process on how to localize a bug
+- Include any relevant code or files
+
+- Generate gcov files for each test
+- Attach information whether tests pass or fail
+- Parse the gcov filesand using tarantula formula
+
+My understanding on how to use Tarantula along with gcov, is very
+limited. Describing the process would have to be minimal progress due
+to a lack of better understanding in order to be successful with this
+process, yet the general idea of how it should work is definetly 
+greater and that I can further explain.
+After generating gcov file for each test, a programmer can further
+understand what is being analyzing and continuely have a greater
+sense on what the is beign indicated by the program itself. Depending
+on how good Tarantula is and how buggy the program being looked at is,
+would depend on whether or not a certain test passes or fail through
+this process.
+Parsign the gcov filestand using the tarantula formula though, I am
+not entirely sure what that mean, mostly because of the face possibly
+that my current level and knowlegde of using Traantula, and extent
+of vocabulary and terminology of such a process is very limited, 
+whereas I am hoping to further enhance of what little I do know, as I
+become more exposed and taught as time goes on.

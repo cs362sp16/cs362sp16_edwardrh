@@ -1,0 +1,16 @@
+- Use unit and random tests to test classmates' written code
+- Find and document at least three bugs
+
+There were not any bugs that came initially very apparent from my
+understanding. It could have been the possibility that my unit tests
+and random test that were used to test my classmate's written code
+may have not worked properly or worked even that well for that matter.
+Possibly after test good tests, there is that high probability that
+there are acutally bugs in his code, which honestly is actually very
+likely/true. Such as 1) a logical error in a function, such as 
+return the incorrect amount of money back for a card or payment of a
+buy 2) missing of a certian step that would affect the gameplay of the
+game overall and 3) possibly just another slightly variation of the 
+situations previously stated, just of a different type of senario.
+I suppose better unit tests and random tests could have been more
+beneficial in the case.

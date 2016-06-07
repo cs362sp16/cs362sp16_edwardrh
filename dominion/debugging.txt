@@ -1,0 +1,28 @@
+- Document the process of identifying and fixing a bug in own code
+- Show how use a debugger to understand problem
+- Describe (if any) Agans' principles applied to the process
+	- Understnad the system
+	- Make it fail
+	- Quit thinking and look
+	- Divide and conquer
+	- Change one thing at a time
+	- Keep an audit trail
+	- Check the plug
+	- Get a fresh view
+	- If you didn't fix it, it ain't fixed
+
+Running a debugger with the program will help examine thing that might
+have been missed in the program, also allowing more control and 
+awareness what is going on throughout/within the code of a program
+in focus. One cannot honestly go wrong with using a debugger if they
+know how to use a GDB.
+By looking at the indicated statements stated throughout a program
+after running a GDB with it, can help identify a bug one my find
+worth looking at, and then further analyzing its deeper reason why it
+was specified in order to hopefully fix the specified bug in the code.
+By understanding the issue this way, can hopefully help a programmer
+understand the system, chagne one thing at a time, and keep an audit
+trial of the process.
+By using a GDB, a programmer gets to really take further deeper
+analyze and make sense of what is being created beyond the visual
+simplicity of the text/code.
